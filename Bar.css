@@ -1,45 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/vtwNVMP8y9C17vLvIBNZI_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2'); 
+}
+
+body{
+   font-family: 'Open Sans', sans-serif;
+   margin:0;
+ /*   background-color:#4CAF50;*/
+}
+
+
+ul{
+    list-style-type: none;
+    background-color:#4CAF50;/*opacity required*/
+    opacity:0.2;
+    position:fixed;
+/*    border-radius:5px;*/
+    height:75px;*/
+    display:block;
+    overflow:hidden;
+    width:100%;
+    margin:0;
+
+}
+
+li {
+    display:inline-block;
+    text-transform: capitalize;
+}
+
 
 .button {
-    background-color: white; /* Green */
-    border: none;
-    border-radius: 4px;
-    color: gray;
-    padding: 15px 32px;
+    background-color:#4CAF50; /* Green */
+    font-family:  'Open Sans';
+    border: 1px solid green;
+    padding: 0;
+/*    border: 0;*/
     text-align: center;
+    text-transform:uppercase;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-
+    display: inline;/* change to block to remove spaces*/
+    font-size: 20px;
+    width:150px;
+    height:75px;
+/*    cursor: pointer;*/
 }
 
+.button:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color:white;
+}
 
-
-.button1 {border: 2px solid  #4CAF50;}
-.button1:hover{
-	background-color:#4CAF50;/*green*/
-	color:white;
-}
-.button2 {border: 2px solid  #008CBA;} /* Blue */
-.button2:hover{
-	background-color:#008CBA;/*green*/
-	color:white;
-}
-.button3 {border: 2px solid  #f44336;} /* Red */ 
-.button3:hover{
-	background-color:#f44336;/*green*/
-	color:white;
-}
-.button4 {border: 2px solid  #e7e7e7; color: black;} /* Gray */ 
-.button4:hover{
-	background-color:#e7e7e7;/*green*/
-	color:white;
-}
-.button5 {border: 2px solid  #555555;} /* Black */
-.button5:hover{
-	background-color:#555555;/*green*/
-	color:white;
+ul:hover{
+    opacity:1;
 }
