@@ -13,7 +13,8 @@ body{
 }
 
 p{
-    min-height: 200px;
+    height:80%;
+    min-height: 500px;
     height: 50%;
     width: 100%;
     text-align: center;
@@ -81,6 +82,7 @@ li{
 .button0 {
     /*width:200px;*/
     background-color:#EAEAEA; /* Slainte Green */
+    padding:0;
 }
 .button img {
     padding: 0;
