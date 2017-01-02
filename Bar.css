@@ -15,6 +15,14 @@ body{
     text-align: center;*/
 }
 
+p{
+    min-height: 200px;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px 0;  
+}
 
 ul{
     list-style-type: none;
