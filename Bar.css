@@ -23,6 +23,7 @@ p{
 }
 
 ul{
+    border: 1px solid red;
     list-style-type: none;
     position:fixed;
     height:40px;
@@ -34,6 +35,7 @@ ul{
     background-color:#EAEAEA;
 }
 li{
+    padding: 0;
     float:left;
     height:40px;
 }
