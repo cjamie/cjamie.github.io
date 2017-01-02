@@ -58,7 +58,7 @@ li{
     text-decoration: none;
     display: block;/* change to block to remove spaces*/
     font-size: 20px;
-
+    height:40px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor:pointer;
@@ -87,6 +87,7 @@ li{
     background-color:#EAEAEA; /* Slainte Green */
 }
 .button img {
+    padding:none;
     height: 40px;
     width: auto;
     border-left:0;
