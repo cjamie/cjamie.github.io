@@ -6,8 +6,8 @@
 }
 
 body{
-    font-family:  'PT Sans', 'Open Sans', sans-serif;
-    margin: 0;
+    font-family:  'Raleway', 'PT Sans', 'Open Sans', sans-serif;
+    margin:0;
     padding: 0;
     background-color: white;
 }
@@ -48,7 +48,7 @@ li{
     /*    background-color:#8AB192; /* Slainte Green **/
     background-color: #EAEAEA;
     margin: 5px;
-    font-family:'PT Sans', 'Open Sans', sans-serif;
+    font-family: 'Raleway','PT Sans', 'Open Sans', sans-serif;
     border:none;
     /*padding: 0px;*/
     /*padding: 6px 24px 6px 24px;*/
@@ -112,18 +112,26 @@ li{
         }*/
 .webBody{
     display:block;
-    margin:auto 5% 0 5%;
+    margin:50px 0% 0 0%;
     position:absolute;
     text-align:center;
-    width:90%;
+    width:100%;
     background-color:white;/*indicates space of box*/
-    top:40px;
+/*    top:50px;*/
     z-index:-1;
     opacity:0.8;
     /*     border: solid 2px*/
+  /*  background-color:black;*/
+}
+.fullpage{
+    min-height: 500px;
+    height:90%;
+/*    background-color:green;*/
 }
 
-
+.filler{
+    height:50px;
+}
 .facebookIcon{
 
 
