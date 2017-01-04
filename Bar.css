@@ -124,12 +124,14 @@ img {
     height:50px;
 }
 iframe {
-    display: block;
+/*    display: block;
     height: 30%;
-    flex-basis: 45%;
-    min-height: 350px;
-    margin: 2%  ;
+    flex-basis: 90%;
+    min-height: 350px;*/
+    margin: 2%;
     float: left;
+    height:260px;
+    width:426px;
 }
 
 p{
@@ -143,11 +145,34 @@ p{
 h3{
     clear: both;
 }
+
 .facebookIcon{
 
 }
+.home{
+    background-color:;
 
+}
+.band{
+    display:flex;
+    flex-direction:column;
+
+}
 .title {
     flex-basis: 100%;
     width: 100%;
+}
+
+section{
+    display:flex;
+    justify-content: space-between;
+    height;
+}
+section>div{
+  /*  justify-content: ;*/
+}
+
+section>article{
+
+
 }
