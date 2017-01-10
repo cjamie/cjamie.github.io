@@ -100,19 +100,21 @@ img {
 
 .webBody{
     display:block;
-    margin:50px 0% 0 0%;
+/*    margin:50px 0% 0 0%;*/
+
     position:absolute;
     text-align:center;
-    width:100%;
+/*    width:100%;*/
     background-color:white;/*indicates space of box*/
     z-index:-1;
     opacity:1;
     overflow:auto;
+    padding-top:50px;
+/*    background-color:blue;*/
 }
 
 .fullpage{
     display: flex;
-    width: 100%;
     /*  padding-top: 50px;*/
     text-align: center;
     border: 1px solid black;
@@ -132,11 +134,11 @@ iframe {
     width:426px;
 }
 
-p{
+/*p{
     margin: 2px;
     float: right;
 }
-
+*/
 h3{
     clear: both;
 }
@@ -174,7 +176,7 @@ article{ /*right side; description*/
     border:3px solid red;
     width:70%;
     /*background-color:yellow;*/
-    padding:10px 10px;
+    padding:20px 20px;
     float:left;
     background-color:pink;
 
@@ -199,6 +201,7 @@ article p{
     padding:0;
     margin:0px;
     border:2px solid black;
+    text-align:left;
     width:100%;
 }
 
