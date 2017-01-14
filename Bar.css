@@ -13,7 +13,7 @@ body{
     position:relative;
 }
 nav{
-    text-align:center;
+ /*   text-align:center;*/
 }
 
 ul{
@@ -22,13 +22,13 @@ ul{
     padding: 0 20px;
     box-sizing: border-box;
     list-style-type: none;
-    position:relative;
-    /* position:fixed;*/
+/*    position:relative;*/
+     position:fixed;
     height: 50px;
     line-height: 50px;
-    display:inline-block;
+    display:block;
     overflow:hidden;
-    width:90%;
+    width:100%;
     background-color:#EAEAEA;
 }
 li{
@@ -117,7 +117,7 @@ li{
     z-index:-1;
     opacity:1;
     overflow:auto;
- /*   padding-top:50px;*//*NEED FOR FIXED*/
+/*    padding-top:50px;*/*//*NEED FOR FIXED
     /*    background-color:blue;*/
 }
 
@@ -213,6 +213,7 @@ article{ /*right side; description*/
     height: 200px;
     transform:scale(0.9);
     border-radius:2px;
+    opacity:0.9;
 /*    min-width: 100%;*/
 /*    left: 50%;*/
    /* position: relative;*/
@@ -223,6 +224,7 @@ article{ /*right side; description*/
 .bMem  div img:hover { /*image of each band members.... to be changed*/
    /* height:200px;*/
 transform:scale(1);
+opacity:1;
     /*    width:auto;*/
 }
 
