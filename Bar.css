@@ -16,7 +16,8 @@ body{
 nav{
 
  /*   text-align:center;*/
- opacity:0.3;
+/* opacity:0.3;*/
+opacity:0.3;
     transition-duration: 0.5s;
 }
 
@@ -110,6 +111,12 @@ li{
 .button:active{
    /* when you press it */
    transform:translateY(5px);
+   text-decoration: overline;
+}
+.button0:active{
+   /* when you press it */
+   transform:translateY(0px);
+   text-decoration: overline;
 }
 .webBody{
     display:block;
@@ -208,20 +215,42 @@ li{
     height:300px;
     border:2px black solid;
 }
+a {text-decoration: none;}
 
 .contact{
-    background-image:url('Images/contact.jpg'); 
+    background-image:    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url('Images/contact.jpg'); 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    height:500px;
+    height:680px;
     margin-bottom:100px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:yellow;
+/*    opacity:0.5;*/
 /*    width:100%;
     height:auto;*/
   /*  border:none;*/
 }
 
-
+.contact section{
+    opacity:0.7;
+    background-color:white;
+    font-size:30px;
+    padding:5%;
+    border-radius:35%;
+    color:Navy;
+/*    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:yellow;
+*/
+}
 /*p{
     margin: 2px;
     float: right;
@@ -327,9 +356,10 @@ h3{
 }
 .bMem  div img { /*image of each band members*//*placeholder until more accurate*/
     height: 200px;
-    transform:scale(0.8);
+    filter:brightness(50%);
+/*    transform:scale(0.8);*/
     border-radius:2px;
-    opacity:0.9;
+ /*   opacity:0.8;*/
     width:50%;
     min-width:200px;
     transition: all 1s ease;
@@ -345,20 +375,25 @@ h3{
     height:200px;
     transform:scale(1);
     opacity:1;
+       filter:brightness(100%);
     /*    width:auto;*/
 }
 
 
-div>.fullpage{ /*each section of the webpage */
+/*div>.fullpage{*/ /*each section of the webpage */
     /*    padding-top:150px;*/
     /*    margin-bottom:0px;
     padding-bottom:-400px;*/
     /*  background-color:yellow;*/
-    padding:none;
+/*    padding:none;
     background-color:brown;
+}*/
+
+.fullPage ~ p{
+ /*   position:absolute;  */
+    background-color:black;  
+    bottom:0;
 }
-
-
 .title{
     /*    padding-top:0px;*/
     font-family:  'Raleway', 'PT Sans', 'Open Sans', sans-serif;
@@ -366,8 +401,8 @@ div>.fullpage{ /*each section of the webpage */
     font-size:30px;
     position:static;
     margin: 20px 0;
-    border:3px green solid;
-    text-decoration: black solid 3px;
+    border:3px DarkGreen solid;
+  /*  text-decoration: black solid 3px;*/
 }
 
 .title:hover{
