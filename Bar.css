@@ -35,7 +35,7 @@ ul{
     display:block;
     overflow:hidden;
     width:100%;
-    background-color:#EAEAEA;
+    background-color:black;
 }
 nav:hover{
     opacity:0.95;
@@ -51,7 +51,7 @@ li{
 .button {
 
     /*    background-color:#8AB192; /* Slainte Green **/
-    background-color: #EAEAEA;
+    background-color: black;
     margin: 5px;
     font-family: 'Raleway','PT Sans', 'Open Sans', sans-serif;
     border:none;
@@ -60,6 +60,7 @@ li{
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    color:white;*//*button text color
     display: block;/* change to block to remove spaces*/
     font-size: 15px;
     height:50px;
@@ -72,7 +73,7 @@ li{
 }
 
 .button:hover{
-    background-color:white;
+    background-color:#2E2E2E;
 /*    transition: transform 2s ease;
 font-weight:bold;
 transform:scale(1.1);*/
@@ -90,9 +91,10 @@ transform:scale(1.1);*/
 
 }
 .button0 {
-    /*width:200px;*/
-    background-color:#EAEAEA; /* Slainte Green */
-    padding:0;
+    /*width:200px;*/ /* Slainte Green */
+    padding:0 20px;
+    background-color:white;
+    border-radius:40px;
 }
 .button img {
     padding: 0;
@@ -104,7 +106,7 @@ transform:scale(1.1);*/
 
 }
 .button0:hover{
-    background-color:#EAEAEA;
+    background-color:white;
     cursor:auto;
     box-shadow:none;
 }
@@ -191,22 +193,26 @@ transform:scale(1.1);*/
 }
 .sampleSet{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom:20px;
     justify-content:center;
     align-self:center;
+}
+#sampleSetFlex{
+    display:flex;
+    flex-direction:row;
 }
 .sampleSet section{ /*the column of 2 pictures*/
     display:flex;
     flex-direction:column;
     overflow:hidden;
 }
-.sampleSet p{ /*right side content*/
+.sampleSet p{ /* side content*/
     line-height:150%;
     width:25%;
     min-height:100px;
     margin-top:20px;
-    background-color:silver;
+    background-color:#E1E6E8;
     display:flex;
     justify-content:center;
     align-self: center;
@@ -347,7 +353,7 @@ h3{
   /*  display:block;*/
   color:#2F3030;
     float:none;
-    border:2px solid black;
+  /*  border:2px solid black;*/
  /*   text-align:left;*/
     width:calc(100%-10px);
     height:246px;
@@ -410,7 +416,7 @@ h3{
     /* font-weight:bold;*/
     font-size:30px;
     position:static;
-    border:3px DarkGreen solid;
+  /*  border:3px DarkGreen solid;*/
     margin-bottom:30px;
   /*  text-decoration: black solid 3px;*/
 }
