@@ -149,15 +149,24 @@ transform:scale(1.1);*/
 .filler{
     height:50px;
 }
-.home iframe {
+.home iframe { /*originally 462x303 dimensions*/
     margin:50px 50px;
-    border:2px silver solid;
     float: left;
     min-height:260px;
+    height:303px;
     height:calc(100%-100px);
     min-width:426px;
     width:auto;
 }
+.home ul{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    background-color:orange;
+    position:absolute;
+}
+
 .home article{
    /* background-color:green;*/
     padding:2%;
@@ -276,9 +285,10 @@ a {text-decoration: none;}
     background-color:yellow;
 */
 }
-/*.copyright{
-    background-color:red;   
-}*/
+.copyright{
+    margin-bottom:0;
+    border:0;
+}
 
 /*p{
     margin: 2px;
@@ -291,13 +301,22 @@ h3{
 
 .home{
     display:flex;
-    flex-flow:row nowrap;
+    flex-flow:column nowrap;
     align-items:center;
     justify-content: center;
-    min-height:100%;
+/*    min-height:100%;*/
 }
+.home section{
+    width:100%;
+    display:flex;
+    flex-flow:row;
+/*    background-color:green;*/
 
-
+}
+.home aside{
+    width:100%;
+    color:black;
+}
 .bandBio{ /*band-full-page*/
     display:flex;
     flex-flow:column nowrap;
