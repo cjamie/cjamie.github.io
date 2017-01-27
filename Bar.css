@@ -120,25 +120,26 @@ li{
 }
 .webBody{
     display:block;
- /*       margin:30px 0% 0 0%;*/
-    left:50px;
-    width:calc(100% - 100px);
-  /*  right:50px;*//*same?*/
+   /* left:50px;
+    width:calc(100% - 100px);*/
     position:absolute;
     text-align:center;
     background-color:white;/*indicates space of box*/
     z-index:-1;
     overflow:auto;
-    top:30px;
+/*    top:30px;*/
    /* padding-top:50px;*//*NEED FOR FIXED
     /*    background-color:blue;*/
 }
 
 .fullpage{
-    display: flex;
+    left:50px;
+    width:calc(100% - 100px);
+    display: table;
+    margin:0 auto;
     /*  padding-top: 50px;*/
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid DarkSlateGrey ;
 /*    position:static;*/
 }
 
@@ -199,7 +200,7 @@ li{
     overflow:hidden;
 }
 .sampleSet p{ /*right side content*/
-    width:50%;
+    width:25%;
     min-height:100px;
     background-color:yellow;
 }
@@ -239,10 +240,11 @@ a {text-decoration: none;}
 }
 
 .contact section{
+    bottom:30px;
     opacity:0.7;
     background-color:white;
     font-size:30px;
-    padding:5%;
+    padding:3%;
     border-radius:35%;
     color:Navy;
 /*    display:flex;
@@ -251,6 +253,10 @@ a {text-decoration: none;}
     background-color:yellow;
 */
 }
+/*.copyright{
+    background-color:red;   
+}*/
+
 /*p{
     margin: 2px;
     float: right;
@@ -281,7 +287,7 @@ h3{
     flex-flow: row nowrap;
     align-items:center;
     justify-content: center;
-    height:200px;
+    height:266px;
     border:2px blue solid;
 /*    margin-bottom:0px;*/
   /*  border: aqua solid 2px;*/
@@ -325,7 +331,7 @@ h3{
 /*height:100%;*/
     float:left;
     background-color:pink;
-    height:200px;
+    height:266px;
 }
 
 .bMem article p{   /*paragraphs inside of article of bMem*/
@@ -335,7 +341,7 @@ h3{
     border:2px solid black;
  /*   text-align:left;*/
     width:calc(100%-10px);
-    height:180px;
+    height:246px;
     margin:10px 10px;
 
     /*to vertically center the text*/
@@ -350,18 +356,18 @@ h3{
 .bMem div {
     /*display:flex;*/
     overflow:hidden;
-    height:200px;
+    height:266px;
     display:flex;
     flex-flow:nowrap row;
 }
 .bMem  div img { /*image of each band members*//*placeholder until more accurate*/
-    height: 200px;
+    height: 266px;
     filter:brightness(50%);
 /*    transform:scale(0.8);*/
     border-radius:2px;
  /*   opacity:0.8;*/
     width:50%;
-    min-width:200px;
+    min-width:266px;
     transition: all 1s ease;
 /*    border:solid silver 3px;*/
 /*    min-width: 100%;*/
@@ -372,7 +378,7 @@ h3{
 /*    transform:translateY(-30%);*/
 }
 .bMem  div img:hover { /*image of each band members.... to be changed*/
-    height:200px;
+    height:266px;
     transform:scale(1);
     opacity:1;
        filter:brightness(100%);
@@ -389,19 +395,14 @@ h3{
     background-color:brown;
 }*/
 
-.fullPage ~ p{
- /*   position:absolute;  */
-    background-color:black;  
-    bottom:0;
-}
 .title{
-    /*    padding-top:0px;*/
+    padding-top:50px; /*to synchronize scrolling*/
     font-family:  'Raleway', 'PT Sans', 'Open Sans', sans-serif;
     /* font-weight:bold;*/
     font-size:30px;
     position:static;
-    margin: 20px 0;
     border:3px DarkGreen solid;
+    margin-bottom:30px;
   /*  text-decoration: black solid 3px;*/
 }
 
