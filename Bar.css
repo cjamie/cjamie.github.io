@@ -22,7 +22,7 @@ opacity:0.3;
     transition-duration: 0.5s;
 }
 
-ul{
+nav ul{
     margin: 0;
     /*-webkit-padding-start: 0px;*/
     padding: 0 30px;
@@ -42,7 +42,7 @@ nav:hover{
 
 }
 
-li{
+nav ul li{
     padding: 0;
     float:left;
     height: 100%;
@@ -136,6 +136,7 @@ transform:scale(1.1);*/
 
 .fullpage{
     left:50px;
+    min-width:950px;
     width:calc(100% - 100px);
     display: table;
     margin:0 auto;
@@ -158,20 +159,33 @@ transform:scale(1.1);*/
     min-width:426px;
     width:auto;
 }
-.home ul{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    background-color:orange;
-    position:absolute;
+.home aside ul{
+ /*   width:100%;
+*/  
+text-overflow: ellipsis;
+border:DarkSlateGrey 1px solid;
+    width:60%;
+    min-width:500px;
+    list-style-type:none;
+/*    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;*/
+  /*  position:absolute;*/
+}
+
+.home ul li:nth-child(odd){
+    background-color:silver;
+    /*border-bottom:2px solid gray;*/
 }
 
 .home article{
    /* background-color:green;*/
     padding:2%;
+    min-width:300px;
+    width:50%;
     margin:50px 50px;
-    border:1px solid DarkSlateGrey;
+    border: 1px solid DarkSlateGrey;
 }
 
 .videoReel iframe{
@@ -314,8 +328,11 @@ h3{
 
 }
 .home aside{
-    width:100%;
     color:black;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
 }
 .bandBio{ /*band-full-page*/
     display:flex;
@@ -364,6 +381,7 @@ h3{
 /*  line-height: normal;*/
 
 }
+
 .bMem>div>img{
     /*width:50%;*/
 }
