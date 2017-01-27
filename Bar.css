@@ -224,7 +224,7 @@ border:DarkSlateGrey 1px solid;
     justify-content:center;
     align-self:center;
 }
-.sampleSet aside{
+.sampleSet aside{ /*first section; text description*/
     padding:10px;
     border-bottom:1px DarkSlateGrey solid;    
 }
@@ -232,6 +232,8 @@ border:DarkSlateGrey 1px solid;
 #sampleSetFlex{
     display:flex;
     flex-direction:row;
+    justify-content: center;
+    align-self:center;
 }
 .sampleSet section{ /*the column of 2 pictures*/
     display:flex;
@@ -241,6 +243,7 @@ border:DarkSlateGrey 1px solid;
 .sampleSet p{ /* side content*/
     line-height:150%;
     width:25%;
+    max-width:300px;
     min-height:100px;
     margin-top:20px;
     background-color:#E1E6E8;
@@ -374,7 +377,7 @@ h3{
     justify-content:center;
     flex-direction:column;
     text-align:center;
- /*   border:silver 2px solid;*/
+   /* border:silver 2px solid;*/
     background-color:#E1E6E8;
 /*  display: inline-block;*/
 /*align-items:center;*/
@@ -382,6 +385,12 @@ h3{
 
 }
 
+.bMem div figcaption h4{
+    color:white;
+    background-color:DarkSlateGrey;
+    font-weight:200%;
+    opacity:0.7;
+}
 .bMem>div>img{
     /*width:50%;*/
 }
