@@ -13,12 +13,13 @@ body{
     color:#2F3030; /*default text color is very dark grey*/
 /*  background-image:url('Images/Slainte_Logo_Color.png');*/
     position:relative;
+
 }
 nav{
 
  /*   text-align:center;*/
 /* opacity:0.3;*/
-opacity:0.3;
+opacity:0.5;
     transition-duration: 0.5s;
 }
 
@@ -96,12 +97,12 @@ transform:scale(1.1);*/
     background-color:white;
     border-radius:40px;
 }
-.button img {
+nav ul li img {
     padding: 0;
     margin: 0;
-    height: 35px;
+    height: 50px;
     width: auto;
-    border-left:0;
+    /*border-left:0;*/
     /*   background-color:black;*/
 
 }
@@ -114,7 +115,7 @@ transform:scale(1.1);*/
 .button:active{
    /* when you press it */
    transform:translateY(5px);
-   text-decoration: overline;
+   text-decoration: underline;
 }
 .button0:active{
    /* when you press it */
@@ -471,19 +472,24 @@ h3{
 }*/
 
 .title{
-    padding-top:50px; /*to synchronize scrolling*/
+    padding-top:48px; /*to synchronize scrolling*/
     font-family:  'Raleway', 'PT Sans', 'Open Sans', sans-serif;
     /* font-weight:bold;*/
-    font-size:30px;
+    font-size:40px;
     position:static;
   /*  border:3px DarkGreen solid;*/
     margin-bottom:30px;
   /*  text-decoration: black solid 3px;*/
 }
 
-.title:hover{
-   background-color:silver;
+.title div{
+    padding: 5px 0;
+    background-color:DarkSlateGrey;
+    color:white;
 }
+/*.title:hover{
+   background-color:silver;
+}*/
 
 .audio{
     display:flex;
