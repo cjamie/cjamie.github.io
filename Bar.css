@@ -263,7 +263,7 @@ border:DarkSlateGrey 1px solid;
     width:calc(100%-40px);
     max-width:533px;
     height:400px;
-    border:2px black solid;
+    border:3px DarkSlateGrey solid;
 }
 a {text-decoration: none;}
 
@@ -472,7 +472,7 @@ h3{
 }*/
 
 .title{
-    padding-top:48px; /*to synchronize scrolling*/
+    padding-top:50px; /*to synchronize scrolling*/
     font-family:  'Raleway', 'PT Sans', 'Open Sans', sans-serif;
     /* font-weight:bold;*/
     font-size:40px;
