@@ -6,25 +6,27 @@
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="Bar.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400, 600" rel="stylesheet">
+	<script src="smooth-scroll.js"></script>
+	<!-- <script>smoothScroll.init();</script> -->
 </head>
 <body>
 
 <!-- 		<div class="S_logo"></div> -->
 	<nav><!-- defines (fixed) set of navigation links -->
 		<ul>
-			<li><a href="#"><button class="button button0">
+			<li><a data-scroll data-options='{ "easing": "linear" }' href="#"><button class="button button0">
 				<img src='Images/Slainte_Logo_Color.png'></button></a></li><!-- shall link to the home page -->
-			<li><a href="#">
+			<li><a data-scroll data-options='{ "easing": "linear" }' href="#">
 				<button class="button button1">Home</button></a></li>
-			<li><a href="#bandBio">
+			<li><a data-scroll data-options='{ "easing": "linear" }' href="#bandBio">
 				<button class="button button2">Band Bios</button></a></li>
-			<li><a href="#videoReel">
+			<li><a data-scroll data-options='{ "easing": "linear" }' href="#videoReel">
 				<button class="button button3">Video Reel</button></a></li>
-			<li><a href="#audio">
+			<li><a data-scroll data-options='{ "easing": "linear" }' href="#audio">
 				<button class="button button4">Audio</button></a></li>
-			<li><a href="#sampleSet">
+			<li><a data-scroll data-options='{ "easing": "linear" }' href="#sampleSet">
 				<button class="button button5">Sample Setlist</button></a></li>
-			<li><a href="#contact">
+			<li><a data-scroll data-options='{ "easing": "linear" }' href="#contact">
 				<button class="button button6">Contact</button></a></li>
 
 			<!-- image that floats to the right -->
@@ -45,17 +47,20 @@
 				<iframe src="https://www.youtube.com/embed/4ljqE5Avd8g" frameborder="0" allowfullscreen>
 				</iframe>
 				<article>
-					Sláinte (slahn-chuh): Irishspeak for cheers
-					</br> 
-					</br>
-					Sláinte is a 5-man Irish band, based out of Boston. Formed in a dorm room at Boston College, the boys from The Heights have been playing pubs and parties in the Boston area since 2013. With upbeat sets featuring a wide range of tunes from Irish classics to Dropkick Murphys covers, and everything in between, Sláinte always brings the craic! 
-					</br>
-					Check out the video reel tab for recent gig highlights, or the audio tab to listen to our demo!	
+					<p>
+						Sláinte (slahn-chuh): Irishspeak for cheers
+					</p>
+					<p>
+						Sláinte is a 5-man Irish band, based out of Boston. Formed in a dorm room at Boston College, the boys from The Heights have been playing pubs and parties in the Boston area since 2013. With upbeat sets featuring a wide range of tunes from Irish classics to Dropkick Murphys covers, and everything in between, Sláinte always brings the craic! 
+					</p>
+					<p>
+						Check out the video reel tab for recent gig highlights, or the audio tab to listen to our demo!	
+					</p>
 				</article>
 			</section>
 			<aside>
  		
-				Schedule
+				<h4>Schedule</br></h4>
 				<ul>
 					<li>11/4/16 - Teddy Gallagher's Pub, Franklin, MA, 9-close</li>
 					<li>11/5/16 - Celtic Cruise - Departs 6:30 PM*</li>
@@ -85,6 +90,7 @@
 					<li>5/20/17 - McBride's Pub, Providence, RI 8-close</li>
 					<li>7/8/17 - Private Event</li>
 				</ul>
+				</br>
 				* All Celtic Cruises begin boarding 15 minutes prior to departure. Tickets can be purchased at: https://www.boston-sailing.com/browse-by-theme/music-cruises/
 			</aside>
 		</div>
@@ -200,25 +206,21 @@
 		<div class="title" id="videoReel"><div>VIDEO REEL</div></div>
 		<div class="fullpage videoReel">
 			<div>Highlights from recent gigs</div>
-			<div class="row row1">
-		<!-- 		<iframe width="420" height="315" src="https://www.youtube.com/embed/N3I7qCpdndw" frameborder="0" allowfullscreen></iframe>
-				<iframe src="https://www.youtube.com/embed/eGD8VV_ONpo" frameborder="0" allowfullscreen></iframe>
-				<iframe src="https://www.youtube.com/embed/ZY7N8lBtqvw" frameborder="0" allowfullscreen></iframe> -->
+			<div class="slideshow-container" style=" min-width:300px;">
+				<div class='sVideo fade'><iframe id ="v1" src="https://www.youtube.com/embed/N3I7qCpdndw?enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>
+				<div class='sVideo fade'><iframe src="https://www.youtube.com/embed/eGD8VV_ONpo" frameborder="0" allowfullscreen></iframe></div>
+				<div class='sVideo fade'><iframe src="https://www.youtube.com/embed/ZY7N8lBtqvw" frameborder="0" allowfullscreen></iframe></div>
+
+
+			<!-- icons that will call updateVideo function -->
+				<a class="prev" onclick="updateVideo(-1)">❮</a>
+				<a class="next" onclick="updateVideo(1)">❯</a>
 			</div>
-			<div class="row row2">
-		<!-- 		<iframe src="https://www.youtube.com/embed/7AvnfVrzQAc" frameborder="0" allowfullscreen></iframe>
-				<iframe src="https://www.youtube.com/embed/YewaR6gWHVc" frameborder="0" allowfullscreen></iframe>
-				<iframe src="https://www.youtube.com/embed/FMEKAhCvLOQ" frameborder="0" allowfullscreen></iframe> -->
-			</div>
-			<div class="row row3">
-		<!-- 		<iframe src="https://www.youtube.com/embed/EOQVtAptU8I" frameborder="0" allowfullscreen></iframe>
-				<iframe src="https://www.youtube.com/embed/Hsrsu-Je2nk" frameborder="0" allowfullscreen></iframe>
-				<iframe src="https://www.youtube.com/embed/ubvM4fPN3iE" frameborder="0" allowfullscreen></iframe> -->
-			</div>
-			<div class="row row4">
-		<!-- 		<iframe src="https://www.youtube.com/embed/290W-82WfyQ" frameborder="0" allowfullscreen></iframe>
-				<iframe src="https://www.youtube.com/embed/J0c9_JEWaB4" frameborder="0" allowfullscreen></iframe> -->
-			</div>
+				<div style="text-align:center">
+					<span class="dot" onclick="currentVideo(1)"></span> 
+					<span class="dot" onclick="currentVideo(2)"></span> 
+					<span class="dot" onclick="currentVideo(3)"></span> 
+				</div>
 		</div>
 		<div class="title" id="audio"><div>AUDIO</div></div>		
 		<div class="fullpage audio">
@@ -238,69 +240,69 @@
 				Below is a sample of what you might hear on a given night:
 			</aside>
 			<section id="sampleSetFlex">
-				<p>
-					Auld Triangle
-					</br>Bad Moon Rising
-					</br>Ballydesmond Polka (trad instrumental)
-					</br>Black and Tans
-					</br>Black Velvet Band
-					</br>Boston Rose
-					</br>Boy Named Sue
-					</br>Boys of the Old Brigade
-					</br>Brown Eyed Girl
-					</br>Charlie and the MTA
-					</br>Chicken Fried
-					</br>Country Roads
-					</br>Dingle
-					</br>Dirty Old Town
-					</br>Dirty Water
-					</br>Drunken Sailor
-					</br>Drunken Lullabies
-					</br>If I Ever leave this world
-					</br>Foggy Dew
-					</br>Fields of Athenry
-					</br>Finnegans Wake
-					</br>Friends in low places
-					</br>Galway Girl
-					</br>Harvest Home
-					</br>House of the Rising Sun
-					</br>If I should fall from grace with god
-					</br>Irish Rover
-				</p>
+				<ul>
+					<li>Auld Triangle</li>
+					<li>Bad Moon Rising</li>
+					<li>Ballydesmond Polka </br>(trad instrumental)</li>
+					<li>Black and Tans</li>
+					<li>Black Velvet Band</li>
+					<li>Boston Rose</li>
+					<li>Boy Named Sue</li>
+					<li>Boys of the Old Brigade</li>
+					<li>Brown Eyed Girl</li>
+					<li>Charlie and the MTA</li>
+					<li>Chicken Fried</li>
+					<li>Country Roads</li>
+					<li>Dingle</li>
+					<li>Dirty Old Town</li>
+					<li>Dirty Water</li>
+					<li>Drunken Sailor</li>
+					<li>Drunken Lullabies</li>
+					<li>If I Ever leave this world</li>
+					<li>Foggy Dew</li>
+					<li>Fields of Athenry</li>
+					<li>Finnegans Wake</li>
+					<li>Friends in low places</li>
+					<li>Galway Girl</li>
+					<li>Harvest Home</li>
+					<li>House of the Rising Sun</li>
+					<li>If I should fall from grace with god</li>
+					<li>Irish Rover</li>
+				</ul>
 				<section>
 					<img src='Images/sample_setlist1.jpg'>
 					<img src='Images/sample_setlist2.jpg'>
 				</section>
-				<p>					
-					Johnny B Goode
-					</br>Kesh Jig
-					</br>Leroy Brown
-					</br>Leaving of Liverpool
-					</br>Margaritaville
-					</br>Molly Malone
-					</br>Moonshiner
-					</br>Nation once again
-					</br>Rattlin Bog
-					</br>Ring of Fire/Folsom Prison Blues
-					</br>Rose Tattoo
-					</br>Sally Bangs
-					</br>Saw Her Standing There
-					</br>Seven Drunken Nights
-					</br>Shipping
-					</br>Spancil Hill
-					</br>Star of County Down
-					</br>Streams of Whiskey
-					</br>Sweet Caroline
-					</br>Take it Easy
-					</br>Tell me Ma
-					</br>Twist and Shout
-					</br>Wagon Wheel
-					</br>The Weight
-					</br>Whiskey in the Jar
-					</br>Wild Colonial Boy
-					</br>Wild Rover
-					</br>Wild Thing
-				</p>
+				<ul>					
+					<li>Johnny B Goode</li>
+					<li>Kesh Jig</li>
+					<li>Leroy Brown</li>
+					<li>Leaving of Liverpool</li>
+					<li>Margaritaville</li>
+					<li>Molly Malone</li>
+					<li>Moonshiner</li>
+					<li>Nation once again</li>
+					<li>Rattlin Bog</li>
+					<li>Ring of Fire/Folsom Prison Blues</li>
+					<li>Rose Tattoo</li>
+					<li>Sally Bangs</li>
+					<li>Saw Her Standing There</li>
+					<li>Seven Drunken Nights</li>
+					<li>Shipping</li>
+					<li>Spancil Hill</li>
+					<li>Star of County Down</li>
+					<li>Streams of Whiskey</li>
+					<li>Sweet Caroline</li>
+					<li>Take it Easy</li>
+					<li>Tell me Ma</li>
+					<li>Twist and Shout</li>
+					<li>Wagon Wheel</li>
+					<li>The Weight</li>
+					<li>Whiskey in the Jar</li>
+					<li>Wild Colonial Boy</li>
+					<li>Wild Rover</li>
+					<li>Wild Thing</li>
+				</ul>
 			</section>
 		</div>
 		<div class="title" id="contact"><div>CONTACT</div></div>
@@ -314,5 +316,66 @@
 		</div>	
 		<div class="fullpage copyright">© 2015 Slainte</div>
 	</div>
+	<script>
+		//global variable index used to keep track of video counter
+		var vidIndex=1;
+
+		//initial video 
+		showVideo(vidIndex);
+		console.log('hello there')
+		//increments or decrements i-ndex, and will call showVideo module
+		function updateVideo(n){
+			showVideo(vidIndex += n);
+		}
+		function currentVideo(n){
+			showVideo(vidIndex = n);
+		}
+
+
+		//takes in an index parameter and will display appropriate dot and video
+
+		//updates the shaded dot
+
+		function showVideo(n){
+			var i;
+
+			//list of video and dot elements
+			var videoClass=document.getElementsByClassName('sVideo');
+			var dotClass=document.getElementsByClassName('dot');
+
+			// vidIndex++;
+			console.log(n);
+			if (n > videoClass.length) 
+				{vidIndex = 1}    
+			if (n < 1) 
+				vidIndex = videoClass.length;
+
+			//must reset state of all iframes to display none 
+			for (i = 0; i < videoClass.length; i++) {
+				videoClass[i].style.display = "none";  
+			}
+			// must reset all dot stats to regular background color via classname
+			for(i=0; i < dotClass.length; i++){
+				dotClass[i].style.backgroundColor="grey";
+			}
+
+			//only pick out 1 of the videos
+			console.log(vidIndex);
+			videoClass[vidIndex-1].style.display="block";
+			//to shade the particular dot, you add the classname to active
+			dotClass[vidIndex-1].style.backgroundColor="black";
+			dotClass[vidIndex-1].className +=" active";
+			//manually set the dot to be red
+			// dotClass[vidIndex-1].classname += " active";
+			// vidIndex++;
+			// setTimeout(showVideo, 2000);
+		}
+	</script>
+  <script src="dist/js/smooth-scroll.js"></script>
+  <script>
+      smoothScroll.init();
+  </script>
+
+
 </body>
 </html>

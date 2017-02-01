@@ -1,3 +1,10 @@
+/*
+Description: Slainte Website
+Author: Jamie Chu, Roseanna Chu
+Author URI: github.com/cjamie
+Tags: web design practice
+*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
 
 @font-face {
@@ -11,16 +18,16 @@ body{
     padding: 0;
     background-color: white;
     color:#2F3030; /*default text color is very dark grey*/
-/*  background-image:url('Images/Slainte_Logo_Color.png');*/
+    /*  background-image:url('Images/Slainte_Logo_Color.png');*/
     position:relative;
 
 }
 nav{
 
  /*   text-align:center;*/
-/* opacity:0.3;*/
-opacity:0.5;
-    transition-duration: 0.5s;
+ /* opacity:0.3;*/
+ opacity:0.5;
+ transition-duration: 0.5s;
 }
 
 nav ul{
@@ -29,8 +36,8 @@ nav ul{
     padding: 0 30px;
     box-sizing: border-box;
     list-style-type: none;
-/*    position:relative;*/
-     position:fixed;
+    /*    position:relative;*/
+    position:fixed;
     height: 50px;
     line-height: 50px;
     display:block;
@@ -113,19 +120,18 @@ nav ul li img {
 }
 
 .button:active{
-   /* when you press it */
-   transform:translateY(5px);
-   text-decoration: underline;
+    /* when you press it */
+    transform:translateY(5px);
+    text-decoration: overline;
 }
 .button0:active{
-   /* when you press it */
-   transform:translateY(0px);
-   text-decoration: overline;
+    /* when you press it */
+    transform:translateY(0px);
 }
 .webBody{
     line-height:150%;
     display:block;
-   /* left:50px;
+    /* left:50px;
     width:calc(100% - 100px);*/
     position:absolute;
     text-align:center;
@@ -136,6 +142,7 @@ nav ul li img {
 }
 
 .fullpage{
+    min-height:100vh;
     left:50px;
     min-width:950px;
     width:calc(100% - 100px);
@@ -145,7 +152,7 @@ nav ul li img {
     /*  padding-top: 50px;*/
     text-align: center;
     border: 1px solid DarkSlateGrey ;
-/*    position:static;*/
+    /*    position:static;*/
 }
 
 .filler{
@@ -162,43 +169,35 @@ nav ul li img {
 }
 .home aside ul{
  /*   width:100%;
-*/  
-text-overflow: ellipsis;
-border:DarkSlateGrey 1px solid;
-    width:60%;
-    min-width:500px;
-    list-style-type:none;
-/*    display:flex;
+ */  
+ text-overflow: ellipsis;
+ border:DarkSlateGrey 1px solid;
+ min-width:60%;
+ width:500px;
+ list-style-type:none;
+    /*    display:flex;
     flex-flow:column wrap;
     justify-content:center;
     align-items:center;*/
-  /*  position:absolute;*/
+    /*  position:absolute;*/
 }
 
 .home ul li:nth-child(odd){
     background-color:silver;
     /*border-bottom:2px solid gray;*/
 }
-
+.home p {
+    padding-bottom:15px;    
+}
 .home article{
-   /* background-color:green;*/
+    /* background-color:green;*/
+    background-color:white;
     padding:2%;
     min-width:300px;
     width:50%;
     margin:50px 50px;
+    text-align:left;
     border: 1px solid DarkSlateGrey;
-}
-
-.videoReel iframe{
-/*    height:260px;
-    width:426px;    
-    margin:2px;
-    position:absolute;*/
-        margin: 2%;
-    border:2px silver solid;
-    float: left;
-    height:260px;
-    width:426px;
 }
 
 .videoReel div{
@@ -241,22 +240,30 @@ border:DarkSlateGrey 1px solid;
     flex-direction:column;
     overflow:hidden;
 }
-.sampleSet p{ /* side content*/
-    line-height:150%;
-    width:25%;
+.sampleSet ul{ /* side content*/
+  /*  width:25%;
     max-width:300px;
     min-height:100px;
     margin-top:20px;
-    background-color:#E1E6E8;
+    background-color:#E1E6E8;*/
+    /*width:25%;*/
+    margin:0;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-self: center;
+    overflow:hidden;
 }
 
+.sampleSet li:nth-child(odd){
+    background-color:grey;
+}
+
+
 .sampleSet section img{  /*960/720 for first image*/
-/*width:100%;*/
+    /*width:100%;*/
     transition:all 1s ease;
- /*   transform:scale(0.8);*/
+    /*   transform:scale(0.8);*/
     overflow:hidden;
     border-radius: 20px;
     margin:20px 20px 0 20px;
@@ -271,7 +278,7 @@ a {text-decoration: none;}
     background-image:    linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ),url('Images/contact.jpg'); 
+      ),url('Images/contact.jpg'); 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -281,10 +288,10 @@ a {text-decoration: none;}
     display:flex;
     align-items:center;
     justify-content:center;
-/*    opacity:0.5;*/
+    /*    opacity:0.5;*/
 /*    width:100%;
-    height:auto;*/
-  /*  border:none;*/
+height:auto;*/
+/*  border:none;*/
 }
 
 .contact section{
@@ -301,11 +308,12 @@ a {text-decoration: none;}
     align-items:center;
     justify-content:center;
     background-color:yellow;
-*/
+    */
 }
 .copyright{
     margin-bottom:0;
     border:0;
+    min-height:0;
 }
 
 /*p{
@@ -316,19 +324,25 @@ a {text-decoration: none;}
 h3{
     clear: both;
 }
+.home h4{
+    font-size:20px;
+    font-weight:bold;
+}
 
 .home{
     display:flex;
     flex-flow:column nowrap;
     align-items:center;
     justify-content: center;
-/*    min-height:100%;*/
+    /*    min-height:100%;*/
 }
 .home section{
     width:100%;
     display:flex;
     flex-flow:row;
-/*    background-color:green;*/
+    /*    margin-top:10px;*/
+    background-color:DarkSlateGrey;
+    /*    background-color:green;*/
 
 }
 .home aside{
@@ -342,7 +356,7 @@ h3{
     display:flex;
     flex-flow:column nowrap;
     /*    width:30%;*/
-  /*  background-color:DarkSlateGrey;*/
+    /*  background-color:DarkSlateGrey;*/
 
 }
 .bMem { /*section for each band member*/
@@ -354,35 +368,35 @@ h3{
     height:266px;
     /*border-bottom:2px blue solid;*/
     margin:10px;
-/*    margin-bottom:0px;*/
-  /*  border: aqua solid 2px;*/
-   /* max-height: 10%;*/
-/*    align-items:center;*/
-/*       background-color:red;*/
+    /*    margin-bottom:0px;*/
+    /*  border: aqua solid 2px;*/
+    /* max-height: 10%;*/
+    /*    align-items:center;*/
+    /*       background-color:red;*/
 }
 
 .bMem>div{/*left side picture+caption band bio*/
-/*    border:3px solid green;*/
-/*    padding:2%; */
+    /*    border:3px solid green;*/
+    /*    padding:2%; */
     width:45%;
-/*    background-color:yellow;*/
+    /*    background-color:yellow;*/
     overflow:hidden;
     height:200px;
     border-bottom:3px solid DarkSlateGrey;
-  /*  border:2px solid black;*/
+    /*  border:2px solid black;*/
 }
 .bMem>div>figcaption{
-    width:50%;
-  /*  float:right;*/
+    width:100%;
+    /*  float:right;*/
     display:flex;
     justify-content:center;
     flex-direction:column;
     text-align:center;
-   /* border:silver 2px solid;*/
+    /* border:silver 2px solid;*/
     background-color:#E1E6E8;
-/*  display: inline-block;*/
-/*align-items:center;*/
-/*  line-height: normal;*/
+    /*  display: inline-block;*/
+    /*align-items:center;*/
+    /*  line-height: normal;*/
 
 }
 
@@ -394,28 +408,29 @@ h3{
 }
 .bMem>div>img{
     /*width:50%;*/
+
 }
 
 .bMem article{ /*right side; description*/
-   /* border:3px solid red;*/
+    /* border:3px solid red;*/
     width:55%;
     overflow:hidden;
- /*   background-color:#E1E6E8;*/
- background-color:white;
+    /*   background-color:#E1E6E8;*/
+    background-color:white;
     /*    padding:20px 20px;*/
-/*    padding:2% 2%;*/
-/*height:100%;*/
+    /*    padding:2% 2%;*/
+    /*height:100%;*/
     float:left;
     /*background-color:pink;*/
     height:266px;
 }
 
 .bMem article p{   /*paragraphs inside of article of bMem*/
-  /*  display:block;*/
-  color:#2F3030;
+    /*  display:block;*/
+    color:#2F3030;
     float:none;
-  /*  border:2px solid black;*/
- /*   text-align:left;*/
+    /*  border:2px solid black;*/
+    /*   text-align:left;*/
     width:calc(100%-10px);
     height:246px;
     margin:10px 10px;
@@ -439,25 +454,23 @@ h3{
 .bMem div img { /*image of each band members*//*placeholder until more accurate*/
     height: 266px;
     filter:brightness(50%);
-/*    transform:scale(0.8);*/
-   /* border-radius:2px;*/
- /*   opacity:0.8;*/
-    width:50%;
-    min-width:266px;
+    /*    transform:scale(0.8);*/
+    /* border-radius:2px;*/
+    /*   opacity:0.8;*/
+    max-width:266px;
     transition: all 1s ease;
-/*    border:solid silver 3px;*/
-/*    min-width: 100%;*/
-/*    left: 50%;*/
-   /* position: relative;*/
-/*    transform:scale(0.5);*/
- /*   transform: translateX(-50%);*/
-/*    transform:translateY(-30%);*/
+    /*    border:solid silver 3px;*/
+    /*    min-width: 100%;*/
+    /*    left: 50%;*/
+    /* position: relative;*/
+    /*    transform:scale(0.5);*/
+    /*   transform: translateX(-50%);*/
+    /*    transform:translateY(-30%);*/
 }
 .bMem div img:hover { /*image of each band members.... to be changed*/
     height:266px;
-    transform:scale(1);
     opacity:1;
-       filter:brightness(100%);
+    filter:brightness(100%);
     /*    width:auto;*/
 }
 
@@ -469,31 +482,94 @@ h3{
     /*  background-color:yellow;*/
 /*    padding:none;
     background-color:brown;
-}*/
+    }*/
 
-.title{
-    padding-top:50px; /*to synchronize scrolling*/
-    font-family:  'Raleway', 'PT Sans', 'Open Sans', sans-serif;
-    /* font-weight:bold;*/
-    font-size:40px;
-    position:static;
-  /*  border:3px DarkGreen solid;*/
-    margin-bottom:30px;
-  /*  text-decoration: black solid 3px;*/
-}
+    .title{
+        padding-top:50px; /*to synchronize scrolling*/
+        font-family:  'Raleway', 'PT Sans', 'Open Sans', sans-serif;
+        /* font-weight:bold;*/
+        font-size:40px;
+        position:static;
+        /*  border:3px DarkGreen solid;*/
+        margin-bottom:30px;
+        /*  text-decoration: black solid 3px;*/
+    }
 
-.title div{
-    padding: 5px 0;
-    background-color:DarkSlateGrey;
-    color:white;
-}
+    .title div{
+        padding: 5px 0;
+        background-color:DarkSlateGrey;
+        color:white;
+    }
 /*.title:hover{
    background-color:silver;
-}*/
+   }*/
 
-.audio{
+   .audio{
     display:flex;
     flex-flow:column nowrap;
     align-items:center;
     justify-content:center;
+}
+
+
+
+.slideshow-container{
+    background-color:green;
+    width:80%;
+    border:2px orange solid;
+    overflow:hidden;
+    margin:0 auto;
+}
+
+.slideshow-container iframe{
+/*    height:260px;
+    width:426px;    
+    margin:2px;
+    position:absolute;*/
+    /*    border:2px silver solid;*/
+    height:260px;
+    width:426px;
+    display:block;
+}
+.prev{
+  left:0;
+}
+.next{
+  right:0;
+}
+
+.prev, .next{
+  cursor:pointer;
+  top:50%;
+  font-size:20px;
+  color:yellow;
+}
+.dot:hover{
+    border-radius:0%;
+    background-color:black;
+}
+
+
+.sVideo{
+    position:static;
+    /* display:none;*/
+    /*display:none;*/ /*default display style is hidden unless changed via javascript*/
+    border:3px red solid;
+    width:60%;
+    margin:0 auto;
+}
+.sVideo iframe{
+  margin:0 auto;
+  width:100%;
+}
+
+.dot{
+  height:10px;
+  width:10px;
+  text-align:center;
+  margin:0 2px;
+  background-color:grey;
+  border-radius:50%;
+  display:inline-block;
+  transition: all 0.5s ease;
 }
